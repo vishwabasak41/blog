@@ -1,0 +1,32 @@
+{% include 'base.html' %}
+<html>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-8">
+{% for obj in q %}
+
+<div class="thumbnail">
+
+<fieldset>
+<h2 class="text-primary page-header" style="margin: 0px 0px 0px 0px;">Author:{{obj.id}}</h2>
+<h3><strong>Author:</strong><br><h4>{{obj.title}}</h4></h3>
+<h3>
+<strong>Matter:</strong><br><h4>{{obj.matter}}</h4></h3>
+
+<button class="btn btn-primary"><a style="color:white;" href="{% url 'detail' id=obj.id %}">{{obj.title}}</a></button>
+</fieldset>
+</br>
+</br>
+</div>
+{% endfor %}
+</div>
+<div class="col-lg-2">
+</div>
+</div>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>
+BlOGGed | {{title}}
+</title>
+<link href="{% static 'bstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<script type = "text/javascript" 
+         src = "{% static 'js_files/jq/jquery.min.js' %}"></script>
+          <!--{% block content %}
+
+          {% endblock %}-->
+
+</script>
+
+<script src="{% static 'js_files/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'js_files/jquery.easing.min.js' %}"></script>
+</head>
+<body style="background-color:rgb(211,211,211);margin: 0px 0px 0px 0px;">
+<div class="container">
+			  <div class="page header" id="contacts" style="background-color:rgb(255,218,185);margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px;" ><h2>Update:</h2></div>
+			  <form action="" class="form-vertical" method="POST">{% csrf_token %}
+			  <div class="form-group">
+			  {{updateform.as_p}}
+			  </div>
+			  
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			  </form>
+              </div>                 
+			  </div>
+			  
+			  
+			  </div>
+			  
+			  </br>
+			  </br>
+
+
+    <script src="jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bstrap/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript 
+    <script src="jquery.easing.min.js"></script>-->
+    </body>
+</html>`

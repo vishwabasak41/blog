@@ -1,0 +1,11 @@
+.submit{
+	list-style: none;
+		
+	border-radius:10px;
+	text-decoration:none;
+	float:right;
+	display:block;
+	background-color:white;
+	color:black;
+	padding:2px 2px 2px 2px;
+}
